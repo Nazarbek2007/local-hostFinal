@@ -1,0 +1,127 @@
+.header{
+
+    .header__content {
+        background: url('../images/page1-img1.webp') no-repeat center / cover;
+        width: 100%;
+        min-height: 850px;
+    }
+    
+    
+    &__content-LangLinkRU {
+        font-size: 20px;
+        line-height: 100%;
+        color: $BlackColor;
+
+        &:hover {
+            color: #B38934;
+        }
+    }
+
+    &__content-LangLinkEn {
+        font-size: 20px;
+        line-height: 100%;
+        color: $BlackColor;
+
+        &:hover {
+            color: #B38934;
+        }
+    }
+
+    &__content-Languages {
+        display: flex;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+
+    &__content-Icons {
+        max-width: 115px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+
+    position: relative;
+
+    &__content-img {
+        width: 100%;
+    }
+
+    &__List {
+        margin-left: 74px;
+    }
+    &__list-item {
+        font-size: 20px;
+        line-height: 55px;
+        color: $BlackColor;
+        font-family: 'PlayfairDisaplay';
+        font-weight: 400;
+    }
+
+    &__content-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 30px;
+        left: 60px;
+
+        &.active {
+            top: 15px;
+            z-index: 3;
+        }
+
+        &::after {
+            content: '';
+            // position: absolute;
+            width: 80px;
+            height: 3px;
+            background: white;
+            margin-top: 14px;
+        }
+
+        &::before {
+            content: '';
+            // position: absolute;
+            width: 80px;
+            height: 3px;
+            background: white;
+        }
+    }
+
+    &__content-test {
+        position: absolute;
+        width: 300px;
+        background: $WhiteColor;
+        height: 100%;
+        bottom: 0;
+        transition: 0.5s;
+
+        &.active2 {
+            transform: translateX(-100%);
+        }
+    }
+
+    &__content-span {
+        width: 80px;
+        height: 3px;
+        background: white;
+        margin-top: 14px;
+    }
+}
+
+.test__img {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+@media(max-width:500px) {
+    .header__content-test {
+        width: 240px;
+    }
+}
+
+
